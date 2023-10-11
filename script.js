@@ -51,7 +51,18 @@ function handleCellClick(e) {
 
     if (gameBoard[cellIndex] === "" && !gameOver) {
         gameBoard[cellIndex] = currentPlayer;
-        cells[cellIndex].textContent = currentPlayer;
+        let temp_col = null;
+        // Set the color for X and O
+        if (currentPlayer === "X") {
+            cells[cellIndex].textContent = "X";
+            cells[cellIndex].style.color = "#007bff"; // Blue for X
+            temp_col = "#007bff";
+        } else {
+            cells[cellIndex].textContent = "O";
+            cells[cellIndex].style.color = "#e91e63"; // Pink for O
+            temp_col = "#e91e63";
+        }
+
         currentPlayer = currentPlayer === "X" ? "O" : "X";
 
         const winner = checkWin();
@@ -61,6 +72,7 @@ function handleCellClick(e) {
                 result.textContent = "It's a draw!";
             } else {
                 result.textContent = `${winner} wins!`;
+                result.style.color = temp_col;
             }
         }
     }

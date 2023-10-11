@@ -1,6 +1,39 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
     font-family: Arial, sans-serif;
+}
+
+.container {
     text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+}
+
+.title {
+    font-size: 28px;
+    color: #007bff;
+}
+
+.symbol-selection {
+    margin: 20px 0;
+}
+
+.symbol-selection label {
+    font-size: 16px;
+    color: #333;
+}
+
+.symbol-selection select {
+    font-size: 16px;
+    padding: 5px;
 }
 
 .board {
@@ -20,11 +53,25 @@ body {
     justify-content: center;
     background-color: #f0f0f0;
     cursor: pointer;
+    color: #333; /* Default color for symbols */
+}
+
+.cell.X {
+    color: #007bff; /* Color for "X" */
+}
+
+.cell.O {
+    color: #e91e63; /* Color for "O" */
+}
+
+.cell:hover {
+    background-color: #e1e1e1;
 }
 
 .result {
     font-size: 24px;
     margin: 20px 0;
+    color: #333;
 }
 
 .reset-button {
