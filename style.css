@@ -4,8 +4,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f7f7f7;
+    background-color: #000;
     font-family: Arial, sans-serif;
+    overflow: hidden; /* Hide overflow to prevent scrolling */
 }
 
 .container {
@@ -51,21 +52,29 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f0f0f0;
+    background-color: #222; /* Dark background */
     cursor: pointer;
-    color: #333; /* Default color for symbols */
-}
-
-.cell.X {
-    color: #007bff; /* Color for "X" */
-}
-
-.cell.O {
-    color: #e91e63; /* Color for "O" */
+    color: #00ff00; /* Neon green for default color */
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+    /* Neon text glow */
+    box-shadow: 0 0 10px #00ff00; /* Neon cell glow */
+    transition: color 0.3s, background-color 0.3s; /* Smooth color and background transitions */
 }
 
 .cell:hover {
-    background-color: #e1e1e1;
+    background-color: #00ff00; /* Neon green background on hover */
+}
+
+.cell.X {
+    color: #ff00ff; /* Neon pink for "X" */
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff; /* Neon text glow for "X" */
+    box-shadow: 0 0 10px #ff00ff; /* Neon cell glow for "X" */
+}
+
+.cell.O {
+    color: #007bff; /* Neon blue for "O" */
+    text-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff; /* Neon text glow for "O" */
+    box-shadow: 0 0 10px #007bff; /* Neon cell glow for "O" */
 }
 
 .result {
