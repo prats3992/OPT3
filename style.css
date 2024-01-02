@@ -52,28 +52,28 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #222; /* Dark background */
+    background-color: #463f3a; /* Dark background */
     cursor: pointer;
-    color: #00ff00; /* Neon green for default color */
-    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+    color: #250902; /* Neon green for default color */
+    text-shadow: 0 0 10px #0B0014, 0 0 20px #0B0014, 0 0 30px #0B0014;
     /* Neon text glow */
-    box-shadow: 0 0 10px #00ff00; /* Neon cell glow */
+    /* box-shadow: 0 0 10px #00ff00; Neon cell glow */
     transition: color 0.3s, background-color 0.3s; /* Smooth color and background transitions */
 }
 
 .cell:hover {
-    background-color: #00ff00; /* Neon green background on hover */
+    background-color: #640d1474; /* Neon green background on hover */
 }
 
 .cell.X {
-    color: #ff00ff; /* Neon pink for "X" */
-    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff; /* Neon text glow for "X" */
+    color: #d80032; /* Neon pink for "X" */
+    /* text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff; Neon text glow for "X" */
     box-shadow: 0 0 10px #ff00ff; /* Neon cell glow for "X" */
 }
 
 .cell.O {
-    color: #007bff; /* Neon blue for "O" */
-    text-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff; /* Neon text glow for "O" */
+    color: #2b2d42; /* Neon blue for "O" */
+    /* text-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff; Neon text glow for "O" */
     box-shadow: 0 0 10px #007bff; /* Neon cell glow for "O" */
 }
 
